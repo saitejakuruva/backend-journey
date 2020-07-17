@@ -91,8 +91,7 @@ exports.findAll = async (req, res) => {
     var result = await Tutorial.findAll
     ({ 
         limit: 10, 
-        order: [['id', 'DESC']],
-        Sequelize.fn('')
+        order: [['id', 'DESC']]
 });
     res.json(result)
 }
